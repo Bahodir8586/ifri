@@ -1,5 +1,5 @@
+import Layout from '../layout'
 const Terms = () => {
-    return <></>
-  }
-  export default Terms
-  
+  return <Layout></Layout>
+}
+export default Terms

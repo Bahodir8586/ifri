@@ -1,4 +1,6 @@
+import Layout from '../layout'
+
 const Contact = () => {
-  return <></>
+  return <Layout></Layout>
 }
 export default Contact

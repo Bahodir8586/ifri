@@ -1,4 +1,6 @@
+import Layout from '../layout'
+
 const About = () => {
-  return <></>
+  return <Layout></Layout>
 }
 export default About

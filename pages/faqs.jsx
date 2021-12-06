@@ -1,4 +1,6 @@
+import Layout from '../layout'
+
 const FAQs = () => {
-  return <></>
+  return <Layout></Layout>
 }
 export default FAQs
