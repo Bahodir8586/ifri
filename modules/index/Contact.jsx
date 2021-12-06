@@ -1,6 +1,11 @@
+import { useState } from 'react'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
   return (
     <div className="relative bg-white">
       <div className="absolute inset-0">
@@ -65,6 +70,8 @@ const Contact = () => {
                   type="text"
                   name="full-name"
                   autoComplete="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder="Full name"
                 />
@@ -77,6 +84,8 @@ const Contact = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder="Email"
                 />
@@ -89,6 +98,8 @@ const Contact = () => {
                   type="text"
                   name="phone"
                   autoComplete="tel"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder="Phone"
                 />
@@ -103,7 +114,8 @@ const Contact = () => {
                   rows={4}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                   placeholder="Message"
-                  defaultValue={''}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div>
