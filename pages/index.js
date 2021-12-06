@@ -6,6 +6,7 @@ export default function Home() {
       <Head>
         <title>IFRI</title>
       </Head>
+      
     </div>
   );
 }
