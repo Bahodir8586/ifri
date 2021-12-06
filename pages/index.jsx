@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import Layout from '../layout'
 import Header from '../modules/index/Header'
+import Contact from '../modules/index/Contact'
+import Stats from '../modules/index/Stats'
 
 export async function getStaticProps(context) {
   return { props: {} }
@@ -14,6 +16,8 @@ const Index = () => (
     </Head>
     <Layout>
       <Header />
+      <Stats />
+      <Contact />
     </Layout>
   </div>
 )
