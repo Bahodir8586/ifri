@@ -5,6 +5,7 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps(context) {
+  //   {category:id, page:id, post:id}
   console.log(context.params)
   return { props: { hi: 'hi' } }
 }
