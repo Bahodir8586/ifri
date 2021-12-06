@@ -58,7 +58,7 @@ const Home = () => {
       </Head>
       <Layout>
         <div className="py-8">
-          <div className="relative bg-white px-4 sm:px-6 lg:px-8">
+          <div className="relative py-12 bg-white px-4 sm:px-6 lg:px-8">
             <div className="absolute inset-0">
               <div className="bg-white h-1/3 sm:h-2/3" />
             </div>
@@ -73,16 +73,9 @@ const Home = () => {
                   <PostCard post={post} key={post.id} />
                 ))}
               </div>
-              <div className="bg-white px-4 py-6 flex justify-center items-center ">
-                <Link href="/" passHref={true}>
-                  <a className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                    Read more
-                  </a>
-                </Link>
-              </div>
             </div>
           </div>
-          <div className="relative bg-white px-4 sm:px-6 lg:px-8">
+          <div className="relative py-12 bg-white px-4 sm:px-6 lg:px-8">
             <div className="absolute inset-0">
               <div className="bg-white h-1/3 sm:h-2/3" />
             </div>
@@ -97,16 +90,9 @@ const Home = () => {
                   <PostCard post={post} key={post.id} />
                 ))}
               </div>
-              <div className="bg-white px-4 py-6 flex justify-center items-center ">
-                <Link href="/" passHref={true}>
-                  <a className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                    Read more
-                  </a>
-                </Link>
-              </div>
             </div>
           </div>
-          <div className="relative bg-white px-4 sm:px-6 lg:px-8">
+          <div className="relative py-12 bg-white px-4 sm:px-6 lg:px-8">
             <div className="absolute inset-0">
               <div className="bg-white h-1/3 sm:h-2/3" />
             </div>
@@ -120,13 +106,6 @@ const Home = () => {
                 {posts.map((post) => (
                   <PostCard post={post} key={post.id} />
                 ))}
-              </div>
-              <div className="bg-white px-4 py-6 flex justify-center items-center ">
-                <Link href={`/posts/1/1`} passHref={true}>
-                  <a className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                    Read more
-                  </a>
-                </Link>
               </div>
             </div>
           </div>
