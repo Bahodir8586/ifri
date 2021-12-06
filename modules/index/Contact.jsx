@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
-const Contact = () => {
+const Contact = ({ submit }) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -61,7 +61,13 @@ const Contact = () => {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault()
+                submit(name, email, phone, message)
+              }}
+              className="grid grid-cols-1 gap-y-6"
+            >
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
@@ -114,13 +120,17 @@ const Contact = () => {
                   rows={4}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                   placeholder="Message"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
               <div>
                 <button
                   type="submit"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    submit(name, email, phone, message)
+                  }}
                   className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Submit
