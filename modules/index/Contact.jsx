@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 const Contact = ({ submit }) => {
+  const { t, lang } = useTranslation('common')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -36,7 +38,7 @@ const Contact = ({ submit }) => {
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <span className="ml-3">+998 (93) 003-0555</span>
                 </dd>
               </div>
               <div className="mt-3">
