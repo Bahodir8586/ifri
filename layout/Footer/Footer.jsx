@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import routePaths from '../../utils/routePaths'
 
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
   main: [
     { name: 'About', href: routePaths['about'] },
