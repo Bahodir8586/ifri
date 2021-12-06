@@ -1,3 +1,5 @@
+import Layout from '../../../../layout'
+
 export async function getStaticPaths() {
   return {
     paths: [],
@@ -8,10 +10,10 @@ export async function getStaticProps(context) {
   //   {category:id, post:id}
   //   TODO: load the content of Post with this ID
   console.log(context.params)
-  return { props: { hi: 'hi' } }
+  return { props: {} }
 }
 
 const Post = ({ ...props }) => {
-  return <></>
+  return <Layout></Layout>
 }
 export default Post
