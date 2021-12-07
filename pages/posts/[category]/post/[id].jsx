@@ -71,7 +71,7 @@ const Post = ({ ...props }) => {
   return (
     <Layout>
       <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-        <div className="relative max-w-5xl p-8 mx-auto shadow-md">
+        <div className="relative max-w-5xl md:p-8 mx-auto shadow-md">
           <h1 className="capitalize text-3xl text-center mb-6 tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             {post.title}
           </h1>
