@@ -71,8 +71,8 @@ const Post = ({ ...props }) => {
   return (
     <Layout>
       <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-        <div className="relative max-w-5xl md:p-8 mx-auto shadow-md">
-          <h1 className="capitalize text-3xl text-center mb-6 tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+        <div className="relative max-w-5xl md:p-8 mx-auto shadow-md rounded-lg">
+          <h1 className="font-sans capitalize text-3xl text-center mb-6 tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             {post.title}
           </h1>
           <img
@@ -80,7 +80,10 @@ const Post = ({ ...props }) => {
             alt={post.title}
             className="w-full h-80 object-cover mb-4"
           />
-          <div dangerouslySetInnerHTML={{ __html: post.body }}></div>
+          <div
+            dangerouslySetInnerHTML={{ __html: post.body }}
+            className="font-roboto text-lg"
+          ></div>
           <div className="mt-6 flex items-center justify-between">
             <div>
               <Link href={`/posts/${post.category.id}/1`} passHref={true}>
