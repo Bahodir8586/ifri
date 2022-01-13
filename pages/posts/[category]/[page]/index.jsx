@@ -122,4 +122,4 @@ const Page = ({ categoryName }) => {
   )
 }
 
-export default Page
+export default Page;
